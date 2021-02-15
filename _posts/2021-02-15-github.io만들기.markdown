@@ -46,6 +46,7 @@ Jekyll이 Ruby로 만들어졌기 때문에 윈도우 OS의 경우 Ruby Devkit�
 
 <img src="../assets/post_pics/ruby_installer.PNG">
 
+
 5. Jekyll 설치
 
 3번에서는 Jekyll 테마를 설치했을 뿐이고, 이번에는 Ruby를 통해 Jekyll을 설치해야 한다.
@@ -62,11 +63,17 @@ gem install jekyll-feed
 gem install tzinfo-data
 ```
 
+
 6. 테마 적용하기
 
-Jekyll 테마 파일 중 `_config.yml`에서 자신의 정보로 수정한 후 테마를 적용하면 된다. 테마를 적용하는 방법은 지금까지 파일들을 Github에 push 해주는 것이다.
+테마를 적용하기 전에 `_config.yml`을 자신의 정보에 맞춰 수정해주어야 한다. ~~그렇지 않으면 이 테마의 제작자인 사람의 블로그가 만들어질 것이다.~~ 나는 기본적인 `title`, `name`, `tagline`, `portfolio_image`, `html_lang`, `social_links` 정도만 바꿔주었다. 나중에 차차 하나씩 수정할 예정이다. 정보를 수정했으면 지금까지 파일들을 Github에 push 해주면 끝이다.
 
-간단하게 vscode에서 push 하는 방법을 소개하자면 
+간단하게 vscode에서 push 하는 방법을 소개하자면 아래 그림 순서에 맞춰서 하면 된다. (2번에서 이미 클론한 상태라고 가정)
+
+<img src="../assets/post_pics/vscode_git_push.PNG">
+
+여기까지 하면 나만의 Github 블로그를 시작할 수 있다. 막상 해보면 어렵진 않지만 여러 가지를 찾아봐야한다는 진입장벽이 있는 것 같다. 이 글을 통해서 다른 누군가도 블로그를 시작하길 바라며 마친다.
+
 
 [jekyll-themes] : http://jekyllthemes.org/
 [Plainwhite] : http://jekyllthemes.org/themes/PlainWhite-Jekyll/
