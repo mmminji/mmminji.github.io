@@ -54,7 +54,7 @@ plainwhite:
 # - about.md
 
 # Build settings
-theme: plainwhite
+# theme: plainwhite
 
 plugins:
   - jekyll-seo-tag
@@ -64,3 +64,4 @@ remote_theme: samarsault/plainwhite-jekyll
 
 plainwhite:
   disqus_shortname: games
+
