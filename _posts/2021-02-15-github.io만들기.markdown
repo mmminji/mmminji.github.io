@@ -15,7 +15,7 @@ categories: github.io Jekyll Ruby
 
 1. Repository 생성
 
-<img src="../assets/post_pics/Create_a_new_repository.PNG">
+![repo](../assets/post_pics/Create_a_new_repository.PNG)
 
 새로운 repository 이름을 [아이디].github.io로 지정하여 생성한다. README 파일은 먼저 만들어 두면 편하다.
 
