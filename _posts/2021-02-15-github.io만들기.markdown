@@ -15,7 +15,7 @@ categories: github.io Jekyll Ruby
 
 ## 1. Repository 생성
 
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/Create_a_new_repository.PNG?raw=true)
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/Create_a_new_repository.PNG?raw=true){: width="100" height="100"}
 
 새로운 repository 이름을 [아이디].github.io로 지정하여 생성한다. README 파일은 자동으로 만들어 두면 편하다.
 
