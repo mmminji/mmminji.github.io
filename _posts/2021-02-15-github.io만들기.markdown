@@ -31,7 +31,7 @@ clone시킬 폴더를 선택하면 해당 폴더에 repository(README파일포�
 
 Github 블로그는 처음부터 자신이 원하는대로 디자인할 수 있지만 Jekyll을 이용하면 이미 만들어진 테마를 쉽게 디자인할 수 있다. [Jekyll 테마](http://jekyllthemes.org/) 사이트에서 원하는 테마를 선택하여 다운로드 한다. 이 중에서 내가 선택한 테마는 [Plainwhite](http://jekyllthemes.org/themes/PlainWhite-Jekyll/)이다. 
 
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/jekyll_themes_plainwhite.PNG?raw=true){: width="700" height="400"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/jekyll_themes_plainwhite.PNG?raw=true){: width="700" height="500"}
 
 다운받은 파일을 압축을 풀고 아까 clone한 폴더에 모든 파일을 옮긴다.
 
@@ -41,13 +41,13 @@ Github 블로그는 처음부터 자신이 원하는대로 디자인할 수 있�
 
 Jekyll이 Ruby로 만들어졌기 때문에 윈도우 OS의 경우 Ruby Devkit이 필요하다. [Ruby Installer](https://rubyinstaller.org/downloads/) 사이트에서 => 표시된 Ruby+Devkit를 설치한다.
 
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/ruby_installer.PNG?raw=true){: width="700" height="700"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/ruby_installer.PNG?raw=true){: width="800" height="700"}
 
 ## 5. Jekyll 설치
 
 3번에서는 Jekyll 테마를 설치했을 뿐이고, 이번에는 Ruby를 통해 Jekyll을 설치해야 한다.
 
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/command_ruby.png?raw=true){: width="600" height="400"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/command_ruby.png?raw=true){: width="700" height="400"}
 
 Ruby 콘솔창에서 repository가 있는 폴더로 들어간 후, 다음 명령어로 Jekyll에 필요한 패키지들을 설치한다.
 
