@@ -4,7 +4,7 @@ title:  "github 블로그 만들기"
 date:   2021-02-15 18:50:15
 categories: github.io Jekyll Ruby
 ---
-"하나씩 꾸미면서 글을 작성한다는 것에 겁이나 시작하지 못했던 일"
+"하나씩 꾸미면서 글을 작성한다는 것에 겁먹고 시작하지 못했던 일"
 
 다른 블로그에 비해 알아야 할 것이 많아 미뤄왔던 Github 블로그를 드디어 시작해보려고 한다. \^o^/
 
@@ -41,7 +41,7 @@ Github 블로그는 처음부터 자신이 원하는대로 디자인할 수 있�
 
 Jekyll이 Ruby로 만들어졌기 때문에 윈도우 OS의 경우 Ruby Devkit이 필요하다. [Ruby Installer](https://rubyinstaller.org/downloads/) 사이트에서 => 표시된 Ruby+Devkit를 설치한다.
 
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/ruby_installer.PNG?raw=true){: width="800" height="700"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/ruby_installer.PNG?raw=true){: width="900" height="600"}
 
 ## 5. Jekyll 설치
 
