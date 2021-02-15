@@ -47,8 +47,7 @@ Jekyll이 Ruby로 만들어졌기 때문에 윈도우 OS의 경우 Ruby Devkit�
 
 3번에서는 Jekyll 테마를 설치했을 뿐이고, 이번에는 Ruby를 통해 Jekyll을 설치해야 한다.
 
-"../assets/post_pics/command_ruby.PNG"
-<img src="../assets/post_pics/command_ruby.PNG">
+<img src="../assets/post_pics/command_ruby.png">
 
 Ruby 콘솔창에서 다음 명령어로 Jekyll에 필요한 패키지들을 설치한다.
 
@@ -66,7 +65,7 @@ gem install tzinfo-data
 
 간단하게 vscode에서 push 하는 방법을 소개하자면 아래 그림 순서에 맞춰서 하면 된다. (2번에서 이미 클론한 상태라고 가정)
 
-<img src="../assets/post_pics/vscode_git_push.PNG">
+<img src="../assets/post_pics/vscode_git_push.png">
 
 여기까지 하면 나만의 Github 블로그를 시작할 수 있다. 막상 해보면 어렵진 않지만 여러 가지를 찾아봐야한다는 진입장벽이 있는 것 같다. 이 글을 통해서 다른 누군가도 블로그를 시작하길 바라며 마친다.
 
