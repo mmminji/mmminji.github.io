@@ -47,6 +47,7 @@ plainwhite:
     #   instance: example.com
     # - username: jekyll2
     #   instance: example.com
+  disqus_shortname: games
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
@@ -62,6 +63,4 @@ plugins:
 
 remote_theme: samarsault/plainwhite-jekyll
 
-plainwhite:
-  disqus_shortname: games
 
