@@ -19,7 +19,6 @@ categories: github.io Jekyll Ruby
 
 새로운 repository 이름을 [아이디].github.io로 지정하여 생성한다. README 파일은 먼저 만들어 두면 편하다.
 
-
 2. Clone
 
 생성한 repository를 내 로컬로 가져와 clone시킨다. 개인의 깃허브 환경에 따라 다르지만 나는 Visual Studio Code를 활용하여 작업을 하고 있다.
@@ -27,7 +26,6 @@ categories: github.io Jekyll Ruby
 F1버튼 --> `Git: Clone` --> `Clone from GitHub` --> 자신이 생성한 github.io 
 
 clone시킬 폴더를 선택하면 해당 폴더에 생성한 repository(README파일포함)를 확인할 수 있다.
-
 
 3. Jekyll 테마 설치
 
@@ -39,18 +37,17 @@ Github 블로그는 처음부터 자신이 원하는대로 디자인할 수 있�
 
 <img src="../assets/post_pics/clone_folder.PNG">
 
-
 4. Ruby 설치
 
 Jekyll이 Ruby로 만들어졌기 때문에 윈도우 OS의 경우 Ruby Devkit이 필요하다. [Ruby Installer][Ruby-Installer] 사이트에서 => 표시된 Ruby+Devkit를 설치한다.
 
 <img src="../assets/post_pics/ruby_installer.PNG">
 
-
 5. Jekyll 설치
 
 3번에서는 Jekyll 테마를 설치했을 뿐이고, 이번에는 Ruby를 통해 Jekyll을 설치해야 한다.
 
+"../assets/post_pics/command_ruby.PNG"
 <img src="../assets/post_pics/command_ruby.PNG">
 
 Ruby 콘솔창에서 다음 명령어로 Jekyll에 필요한 패키지들을 설치한다.
@@ -62,7 +59,6 @@ gem install bundler
 gem install jekyll-feed
 gem install tzinfo-data
 ```
-
 
 6. 테마 적용하기
 
