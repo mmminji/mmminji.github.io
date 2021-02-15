@@ -25,12 +25,13 @@ categories: github.io Jekyll Ruby
 
 F1버튼 --> `Git: Clone` --> `Clone from GitHub` --> 자신이 생성한 github.io 
 
-clone시킬 폴더를 선택하면 해당 폴더에 생성한 repository(README파일포함)를 확인할 수 있다.
+clone시킬 폴더를 선택하면 해당 폴더에 repository(README파일포함)가 들어가진다.
 
 ## 3. Jekyll 테마 설치
 
 Github 블로그는 처음부터 자신이 원하는대로 디자인할 수 있지만 Jekyll을 이용하면 이미 만들어진 테마를 쉽게 디자인할 수 있다. [Jekyll 테마](http://jekyllthemes.org/) 사이트에서 원하는 테마를 선택하여 다운로드 한다. 이 중에서 내가 선택한 테마는 [Plainwhite](http://jekyllthemes.org/themes/PlainWhite-Jekyll/)이다. 
 
+![](https://github.com/mmminji/mmminji.github.io/blob/master/assets/post_pics/jekyll_themes_plainwhite.PNG)
 <img src="../assets/post_pics/jekyll_themes_plainwhite.PNG">
 
 다운받은 파일을 압축을 풀고 아까 clone한 폴더에 모든 파일을 옮긴다.
