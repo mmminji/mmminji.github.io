@@ -13,5 +13,5 @@ categories: github.io Jekyll Ruby
 본격적으로 첫 게시물인만큼 이 글을 쓰기까지의 과정, 즉 Github 블로그 만들기를 하나씩 소개해보려고 한다.
 
 1. Repository 생성
-<img src="assets/post_pics/Create_a_new_repository.PNG" width="450px" height="300px">
+<img src="../assets/post_pics/Create_a_new_repository.PNG" width="450px" height="300px">
 
