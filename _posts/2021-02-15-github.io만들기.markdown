@@ -71,8 +71,9 @@ gem install tzinfo-data
 
 이 글을 통해서 다른 누군가도 블로그를 시작하길 바라며 마친다.
 
-
-
+### Update Tips
+- _config.yml 파일에서 plainwhite 하위에 disqus_shortname: [disqus id]를 추가하면 아래 댓글창을 만들 수 있다.
+- _config.yml 파일에서 `theme`를 [공식 페이지](pages.github.com/themes/)에서 골라 적어놓으면(가짜) warning 메일이 오지 않는다.
 
 
 
