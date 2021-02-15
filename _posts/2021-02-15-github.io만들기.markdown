@@ -31,6 +31,9 @@ clone시킬 폴더를 선택하면 해당 폴더에 생성한 repository(README�
 
 Github 블로그는 처음부터 자신이 원하는대로 디자인할 수 있지만 Jekyll을 이용하면 이미 만들어진 테마를 쉽게 디자인할 수 있다. [Jekyll 테마][jekyll-themes] 사이트에서 원하는 테마를 선택하여 다운로드 한다. 이 중에서 내가 선택한 테마는 [Plainwhite][Plainwhite]이다. 
 
+[jekyll-themes] : http://jekyllthemes.org/
+[Plainwhite] : http://jekyllthemes.org/themes/PlainWhite-Jekyll/
+
 <img src="../assets/post_pics/jekyll_themes_plainwhite.PNG">
 
 다운받은 파일을 압축을 풀고 아까 clone한 폴더에 모든 파일을 옮긴다.
@@ -40,6 +43,8 @@ Github 블로그는 처음부터 자신이 원하는대로 디자인할 수 있�
 4. Ruby 설치
 
 Jekyll이 Ruby로 만들어졌기 때문에 윈도우 OS의 경우 Ruby Devkit이 필요하다. [Ruby Installer][Ruby-Installer] 사이트에서 => 표시된 Ruby+Devkit를 설치한다.
+
+[Ruby-Installer] : https://rubyinstaller.org/downloads/
 
 <img src="../assets/post_pics/ruby_installer.PNG">
 
@@ -70,9 +75,9 @@ gem install tzinfo-data
 여기까지 하면 나만의 Github 블로그를 시작할 수 있다. 막상 해보면 어렵진 않지만 여러 가지를 찾아봐야한다는 진입장벽이 있는 것 같다. 이 글을 통해서 다른 누군가도 블로그를 시작하길 바라며 마친다.
 
 
-[jekyll-themes] : http://jekyllthemes.org/
-[Plainwhite] : http://jekyllthemes.org/themes/PlainWhite-Jekyll/
-[Ruby-Installer] : https://rubyinstaller.org/downloads/
+
+
+
 
 
 
