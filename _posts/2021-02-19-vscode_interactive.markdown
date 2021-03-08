@@ -14,7 +14,7 @@ categories: VisualStudioCode Settings
 
 가장 흔히 사용되는 방법은 코드 위에 주석 형태로 `#%%`를 입력하는 것이다. 
 
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/cell.PNG?raw=true){: width="400" height="400"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/cell.PNG?raw=true){: width="600" height="300"}
 
 Shift + Enter 를 누루면 `#%%`와 다음 `#%%` 사이의 코드들을 실행시켜준다. 이 방법은 실행시키고 싶을 때마다 `#%%`를 입력해야 한다는 번거로움이 존재한다.  
 그래서 주석없이 드래그한 코드를 실행시킬 수 있는 방법이 있다.
