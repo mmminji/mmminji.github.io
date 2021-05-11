@@ -41,12 +41,8 @@ Loss function(손실 함수)은 실젯값과 예측값의 차이로 모형의 �
 ### 7.5.2 L1 손실 함수
 L1 손실은 실젯값과 예측값의 차이에 기댓값을 취한 것으로, 관련된 비용 함수는 MAE(Mean Absolute Error)이다.  
 
-$$  
-L1 loss = \sum \left | y_{true}-y_{predict} \right |  
-$$  
-$$  
-MAE = \frac{1}{n}\sum_{i=1}^{n}\left | y_{i}-\hat{y_{i}} \right |  
-$$  
+$L1 loss = \sum \left | y_{true}-y_{predict} \right |$  
+$MAE = \frac{1}{n}\sum_{i=1}^{n}\left | y_{i}-\hat{y_{i}} \right |$  
 
 ### 7.5.3 L2 손실 함수
 L2 손실은 실젯값과 예측값의 차이에 제곱을 취한 것으로, 관련된 비용 함수에는 MSE(Mean Squared Error), RMSE(Root Mean Squared Error)가 있다.
