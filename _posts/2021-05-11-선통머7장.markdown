@@ -42,11 +42,14 @@ Loss function(손실 함수)은 실젯값과 예측값의 차이로 모형의 �
 L1 손실은 실젯값과 예측값의 차이에 기댓값을 취한 것으로, 관련된 비용 함수는 MAE(Mean Absolute Error)이다.  
 
 $$  
-L1 loss = \sum \vert y_ture-y_predict \vert  
+L1 loss = \sum \left | y_{true}-y_{predict} \right |  
 $$  
 $$  
-MAE = \frac{1}{n} \sum_{i=1}^n \vert y_i-\hat{y_i} \vert  
+MAE = \frac{1}{n}\sum_{i=1}^{n}\left | y_{i}-\hat{y_{i}} \right |  
 $$  
+
+### 7.5.3 L2 손실 함수
+L2 손실은 실젯값과 예측값의 차이에 제곱을 취한 것으로, 관련된 비용 함수에는 MSE(Mean Squared Error), RMSE(Root Mean Squared Error)가 있다.
 
 
 이 내용은 **선형대수와 통계학으로 배우는 머신러닝 with 파이썬 : 최적화 개념부터 텐서플로를 활용한 딥러닝까지** 책을 기반으로 공부한 자료입니다.
