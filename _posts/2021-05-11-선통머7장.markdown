@@ -17,7 +17,7 @@ categories: MachineLearning
 
 ## 7.2 크로스-밸리데이션
 Cross Validation(교차검증)이란, 오버피팅과 언더피팅을 방지하기 위한 방법 중 하나이다. 이는 데이터를 분할할 수 있는 다양한 조합을 통해서 모형의 성능을 검증하는 방법이다. 만약 k개로 분할하여 조합을 바꾼다면 K-fold cross-validation이라고 부른다.  
-![4-fold cross-validation](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/7.2-CV.png?raw=true){: width="500" height="300"}
+![4-fold cross-validation](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/7.2-CV.png?raw=true){: width="700" height="300"}
 
 - 다양한 머신러닝 알고리즘 적용시
     - 파라미터 : 모형 내부에서 데이터에 의해 추정되는 값
@@ -41,8 +41,12 @@ Loss function(손실 함수)은 실젯값과 예측값의 차이로 모형의 �
 ### 7.5.2 L1 손실 함수
 L1 손실은 실젯값과 예측값의 차이에 기댓값을 취한 것으로, 관련된 비용 함수는 MAE(Mean Absolute Error)이다.  
 
-$$ L1 loss = \sum \vert y_ture-y_predict \vert $$  
-$$ MAE = \frac{1}{n} \sum_{i=1}^n \vert y_i-\hat{y_i} \vert $$
+$$
+L1 loss = \sum \vert y_ture-y_predict \vert
+$$  
+$$ 
+MAE = \frac{1}{n} \sum_{i=1}^n \vert y_i-\hat{y_i} \vert 
+$$
 
 
 이 내용은 **선형대수와 통계학으로 배우는 머신러닝 with 파이썬 : 최적화 개념부터 텐서플로를 활용한 딥러닝까지** 책을 기반으로 공부한 자료입니다.
