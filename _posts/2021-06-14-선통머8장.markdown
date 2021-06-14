@@ -32,7 +32,7 @@ Logistic Regression(로지스틱 회귀 분석)이란, 분류를 위해 클래�
 ## 8.6 나이브 베이즈 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/8.6.NaiveBayes.py)
 Naive bayes(나이브 베이즈)는 서로 조건부 독립인 변수를 가정하고, 베이즈 이론을 기반으로 하는 알고리즘이다. 조건부 확률에서의 조건을 이용하여 각각의 클래스 확률을 추정하는 것이다. 
 - 베이즈 정리 : 두 확률 변수의 사전 확률과 사후 확률 사이의 관계를 나타낸 정리  
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/8.6-Bayes.PNG?raw=true){: width="300" height="60"}  
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/8.6-Bayes.PNG?raw=true){: width="500" height="100"}  
 ![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/8.6-Naive_bayes.PNG?raw=true){: width="500" height="300"}
 
 ## 8.7 의사 결정 나무 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/8.7.DecisionTree.py)
