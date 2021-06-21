@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "선형대수와 통계학으로 배우는 머신러닝 with 파이썬 9장"
+date:   2021-06-21
+categories: Ensemble Voting Bagging Boosting Stacking 
+---
+[Book Review] 한줄정리
+
+# 9 앙상블 학습
+
+## 9.1 앙상블 학습 개념
+Ensemble Learning(앙상블 학습)이란, 예측 모형을 여러 개 만들고 서로 비교하여 최종 예측을 결정하는 것을 말한다.
+
+## 9.2 보팅 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/9.2.Voting.py)
+Voting(보팅)은 여러 개의 예측 모형 결과를 대상으로 투표를 통해 최종 예측을 하는 것이다. 투표 결과 중 가장 많은 표를 얻은 것으로 예측하는 다수결 투표(plurality voting)가 있고, 절반 이상의 표를 얻어야 하는 과반수 투표(majority voting)가 있다.
+
+## 9.3 배깅 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/9.3.3.RandomForest.py)과 랜덤 포레스트 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/9.3.4.Bagging.py)
+- Bootstrap Aggregating(배깅) : 부트스트랩(중복을 허용한 랜덤 샘플 방법) 샘플을 뽑아 개별 분류기들의 분류 결과를 다수결 투표로 최종 예측하는 방법  
+--> 동일한 학습 데이터에 다른 개별 분류기로 학습하는 보팅과는 달리 배깅에서는 같은 개별 분류기들을 사용한다.  
+- Random Forest(랜덤 포레스트) : 배깅을 이용한 알고리즘으로 여러 개의 의사 결정 나무가 예측한 결과를 종합한 방법
+
+## 9.4 부스팅 
+위에서 본 보팅과 배깅은 독립적 앙상블 방법이다. 반면, 개별 학습기들이 서로 독립이 아닌 경우는 의존적 앙상블 방법이라고 한다. 가장 대표적인 의존적 앙상블 방법은 부스팅이다.
+- 부스팅 : 각 데이터 포인트에 가중치를 주어 분류하기 어려운 데이터에 집중하여 학습하는 방법, 다시 말해 이전 분류기에서 잘못 분류된 데이터에 집중하여 새로운 분류기가 학습
+
+### 9.4.2 에이다 부스트 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/9.4.2.AdaBoost.py)
+AdaBoost(에이다 부스트)는 전체 학습 데이터를 사용하여 약한 학습기가 훈련할 때마다 각 샘플에 가중치를 부여하고 잘못 예측했을 때는 이 가중치를 높여 다음 학습기가 이를 낮추도록 학습시키는 방법이다. 이 때, 최종 학습기는 각 약한 학습기마다 가중치를 부여하여 예측한다.
+
+### 9.4.4 그래디언트 부스팅 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/9.4.5.GradientBoosting.py)
+Gradient Boosting(그래디언트 부스팅)이란, 그래디언트를 이용해 비용함수를 최적화시키는 방법으로 약한 분류기를 계속 합해가는 방법이다. 여기서 그래디언트 학습이란 각 변수로 학습하는 것이 아니라 변수와 기존 모형의 잔차로 학습하는 것을 의미한다.
+- Stochastic Gradient Boosting(확률적 그래디언트 부스팅) : 그래디언트 부스팅 방법에서 약한 분류기가 학습 데이터의 일부를 랜덤으로 선택하여 학습하는 방법
+
+## 9.5 스태킹 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/9.5.Stacking.py)
+Stacking(스태킹)이란, 여러 가지 학습기를 쌓는 방법으로 베이스 학습기가 학습하여 예측한 결과를 변수로 활용하여 메타 학습기가 최종 예측을 하는 방법이다.
+
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/9-Ensemble.PNG?raw=true){: width="800" height="600"}
+
+이 내용은 **선형대수와 통계학으로 배우는 머신러닝 with 파이썬 : 최적화 개념부터 텐서플로를 활용한 딥러닝까지** 책을 기반으로 공부한 자료입니다.
