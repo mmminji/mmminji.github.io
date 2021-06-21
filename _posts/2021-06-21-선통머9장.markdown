@@ -33,6 +33,6 @@ Gradient Boosting(그래디언트 부스팅)이란, 그래디언트를 이용해
 ## 9.5 스태킹 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/9.5.Stacking.py)
 Stacking(스태킹)이란, 여러 가지 학습기를 쌓는 방법으로 베이스 학습기가 학습하여 예측한 결과를 변수로 활용하여 메타 학습기가 최종 예측을 하는 방법이다.
 
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/9-Ensemble.PNG?raw=true){: width="800" height="600"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/9-Ensemble.PNG?raw=true){: width="1000" height="700"}
 
 이 내용은 **선형대수와 통계학으로 배우는 머신러닝 with 파이썬 : 최적화 개념부터 텐서플로를 활용한 딥러닝까지** 책을 기반으로 공부한 자료입니다.
