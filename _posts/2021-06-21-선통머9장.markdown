@@ -14,7 +14,7 @@ Ensemble Learning(앙상블 학습)이란, 예측 모형을 여러 개 만들고
 ## 9.2 보팅 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/9.2.Voting.py)
 Voting(보팅)은 여러 개의 예측 모형 결과를 대상으로 투표를 통해 최종 예측을 하는 것이다. 투표 결과 중 가장 많은 표를 얻은 것으로 예측하는 다수결 투표(plurality voting)가 있고, 절반 이상의 표를 얻어야 하는 과반수 투표(majority voting)가 있다.
 
-## 9.3 배깅 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/9.3.3.RandomForest.py)과 랜덤 포레스트 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/9.3.4.Bagging.py)
+## 9.3 배깅 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/9.3.4.Bagging.py)과 랜덤 포레스트 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/9.3.3.RandomForest.py)
 - Bootstrap Aggregating(배깅) : 부트스트랩(중복을 허용한 랜덤 샘플 방법) 샘플을 뽑아 개별 분류기들의 분류 결과를 다수결 투표로 최종 예측하는 방법  
 --> 동일한 학습 데이터에 다른 개별 분류기로 학습하는 보팅과는 달리 배깅에서는 같은 개별 분류기들을 사용한다.  
 - Random Forest(랜덤 포레스트) : 배깅을 이용한 알고리즘으로 여러 개의 의사 결정 나무가 예측한 결과를 종합한 방법
@@ -33,6 +33,6 @@ Gradient Boosting(그래디언트 부스팅)이란, 그래디언트를 이용해
 ## 9.5 스태킹 [>코드<](https://github.com/mmminji/Machine-Learning/blob/master/9.5.Stacking.py)
 Stacking(스태킹)이란, 여러 가지 학습기를 쌓는 방법으로 베이스 학습기가 학습하여 예측한 결과를 변수로 활용하여 메타 학습기가 최종 예측을 하는 방법이다.
 
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/9-Ensemble.PNG?raw=true){: width="1000" height="700"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/9-Ensemble.PNG?raw=true){: width="1100" height="700"}
 
 이 내용은 **선형대수와 통계학으로 배우는 머신러닝 with 파이썬 : 최적화 개념부터 텐서플로를 활용한 딥러닝까지** 책을 기반으로 공부한 자료입니다.
