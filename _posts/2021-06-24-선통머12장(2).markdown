@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "선형대수와 통계학으로 배우는 머신러닝 with 파이썬 12장(2)"
-date:   2021-06-22
+date:   2021-06-24
 categories: CNN
 ---
 [Book Review] 한줄정리
