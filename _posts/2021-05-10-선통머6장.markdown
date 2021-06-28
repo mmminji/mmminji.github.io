@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "선형대수와 통계학으로 배우는 머신러닝 with 파이썬 6장"
+title:  "데이터 전처리"
 date:   2021-05-10
 categories: MachineLearning Preprocessing MissingValue LabelEncoder Scaling
 ---

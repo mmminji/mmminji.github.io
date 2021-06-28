@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "선형대수와 통계학으로 배우는 머신러닝 with 파이썬 12장(1)"
+title:  "딥러닝"
 date:   2021-06-22
 categories: ANN Perceptron BackPropagation ActivationFunction BatchNormalization Dropout
 ---

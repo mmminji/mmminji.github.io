@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "선형대수와 통계학으로 배우는 머신러닝 with 파이썬 8장"
+title:  "지도 학습"
 date:   2021-06-14
 categories: kNN LinearRegression LogisticRegression NaiveBayes DecisionTree SupportVectorMachine
 ---
