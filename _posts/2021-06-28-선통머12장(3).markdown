@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "RNN"
+date:   2021-06-28
+categories: RNN LSTM GRU
+---
+[Book Review] 한줄정리
+
+# 12 딥러닝
+
+## 12.5 순환 신경망 [>TensorFlow코드<](https://github.com/mmminji/Machine-Learning/blob/master/12.5.TensorFlowLSTM.py)  [>PyTorch코드<](https://github.com/mmminji/Machine-Learning/blob/master/12.5.PyTorchGRU.py)
+Recurrent Neural Network(순환 신경망, RNN)는 시퀀스 데이터를 처리하는 방법으로 은닉층의 출력값이 다음 시점에 사용되는 신경망 구조를 갖고 있다.  
+이로 인해 그래디언트 소실 문제나 폭주 문제가 발생하는데 이를 해결하기 위해 Long Short Term Memory(LSTM)이 등장한다.
+- 입력 게이트(i, g) : 셀 상태를 업데이트
+- 삭제 게이트(f) : 통과할 정보와 억제할 정보를 결정
+- 출력 게이트(o) : 은닉 유닛의 출력값을 생성
+- 셀 상태(c) : 이전 시점의 셀 상태와 삭제 게이트 값을 곱하고, 입력 게이트 값과 원소 합 계산
+- 은닉 유닛(h) : 출력 게이트 값과 해당 시점의 셀 상태의 하이퍼볼릭 탄젠트 값을 곱한 값  
+
+LSTM의 계산을 좀 더 간소화시켜 셀 상태 없이 은닉 상태만 사용하는 Gated Recurrent Unit(GRU)가 등장한다.
+- z : 삭제 게이트와 입력 게이트를 모두 제어(1이면 삭제 게이트, 0이면 입력 게이트)
+- r : 이전 상태의 어느 부분이 g에 노출될지 제어  
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/12.5-RNN.png?raw=true){: width="800" height="1400"}
+
+
+이 내용은 **선형대수와 통계학으로 배우는 머신러닝 with 파이썬 : 최적화 개념부터 텐서플로를 활용한 딥러닝까지** 책을 기반으로 공부한 자료입니다.
