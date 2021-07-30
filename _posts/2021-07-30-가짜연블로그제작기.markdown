@@ -81,11 +81,11 @@ html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=tryc
 ```
 <H1>블록레벨요소</H1>
 <span class="ml-3">인라인레벨요소</span>
-<hr class="my-2">  <!-- 수평선 긋기 -->
+
 <H1 style="display:inline">블록레벨요소</H1>
 <span class="ml-3">인라인레벨요소</span>
 ```
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/block-inline.PNG?raw=true){: width="500" height="200"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/block-inline.PNG?raw=true){: width="400" height="100"}
 
 `[참고자료]` [css와 박스모델](https://myetc.tistory.com/18)
 
@@ -98,19 +98,19 @@ html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=tryc
 
 ```
 1번 영역<div>2번 영역</div>
-<hr class="my-2">
+
 <p>1번 문단</p><p>2번 문단</p>
-<hr class="my-2">
+
 1번 문장<br />2번 문장
-<hr class="my-2">
+
 1번 범위<span>2번 범위</span>
 ```
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/tag.PNG?raw=true){: width="500" height="400"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/tag.PNG?raw=true){: width="500" height="300"}
 
-추가로 `<a>`태그는 하이퍼링크를 걸어주는 태그이다. 직접 절대주소를 명시할 수도 있고, #으로 페이지 최상단으로 이동할 수도 있다.  
+추가로 `<a>`태그는 하이퍼링크를 걸어주는 태그이다. 직접 절대주소를 명시할 수도 있고, #은 페이지 최상단으로 이동할 수도 있다.  
 ```
 <a href="https://www.linkedin.com/in/mmminji/">강민지 링크드인 프로필</a>
 <a href="#">클릭</a>
 ```
 
-`[참고자료]` [<a> 태그의 href 속성](http://tcpschool.com/html-tag-attrs/a-href)
+`[참고자료]` [a 태그의 href 속성](http://tcpschool.com/html-tag-attrs/a-href)
