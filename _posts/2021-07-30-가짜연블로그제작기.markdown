@@ -21,7 +21,7 @@ HTML은 Hyper Text Markup Language의 약자로 페이지의 제목, 문단, 표
 
 ## 2. Bootstrap의 공백 클래스
 HTML의 각 엘리먼트들은 박스 형태를 가지고 있다.(=Box model) 각각의 Content가 있고 그것을 둘러싼 Border가 존재하는데, Border안에 주는 공백을 Padding, Border밖에 주는 공백을 Margin이라고 부른다.  
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/boxmodel.png?raw=true){: width="500" height="250"}  
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/boxmodel.png?raw=true){: width="600" height="300"}  
 이러한 Padding과 Margin을 주는 방법은 다음과 같다.
 - P, M
     - `P` : Padding
@@ -65,7 +65,7 @@ HTML의 각 엘리먼트들은 박스 형태를 가지고 있다.(=Box model) �
 <div class="py-3 bg-secondary">py-3 bg-secondary</div>
 <div class="ml-2 my-3 px-5 text-danger bg-warning">ml-2 my-3 px-5 text-danger bg-warning</div>
 ```
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/bootstrap.PNG?raw=true){: width="900" height="500"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/bootstrap.PNG?raw=true){: width="800" height="400"}
 
 html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=trycss_default)에서 바로 실행해볼 수 있다.
 
