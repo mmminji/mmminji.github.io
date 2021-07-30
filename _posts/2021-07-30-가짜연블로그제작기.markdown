@@ -74,7 +74,7 @@ html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=tryc
 ## 3. 블록레벨요소와 인라인레벨요소
 블록레벨요소는 혼자 한 줄을 차지하는 요소라 왼쪽, 오른쪽에 다른 요소가 올 수 없다. 반면, 인라인레벨요소는 줄을 차지 않는 요소라 한 줄에 여러 개의 요소를 표시할 수있다.
 - 블록레벨요소 : <P>,<H1>~<H6>,<ul>,<ol>,<div>,<blockquote>,<form>,<hr>,<table>,<fieldset>,<address>
-- 인라인레벨요소 : <img>,<object>,<br>,<sub>,<sup>,<span>,<input>,<textarea>,<label>,<button>
+- 인라인레벨요소 : "<img>,<object>,<br>,<sub>,<sup>,<span>,<input>,<textarea>,<label>,<button>"
 
 하지만 블록레벨요소를 인라인레벨요소처럼 바꿀 수 있다. 즉 <H1> 옆에 <span> 을 넣게 할 수 있다. 방법은 아래 코드이다.  
 
@@ -85,7 +85,7 @@ html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=tryc
 <H1 style="display:inline">블록레벨요소</H1>
 <span class="ml-3">인라인레벨요소</span>
 ```
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/block-inline.PNG?raw=true){: width="400" height="100"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/block-inline.PNG?raw=true){: width="400" height="150"}
 
 `[참고자료]` [css와 박스모델](https://myetc.tistory.com/18)
 
@@ -105,7 +105,7 @@ html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=tryc
 
 1번 범위<span>2번 범위</span>
 ```
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/tag.PNG?raw=true){: width="500" height="300"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/tag.PNG?raw=true){: width="500" height="250"}
 
 추가로 `<a>`태그는 하이퍼링크를 걸어주는 태그이다. 직접 절대주소를 명시할 수도 있고, #은 페이지 최상단으로 이동할 수도 있다.  
 ```
