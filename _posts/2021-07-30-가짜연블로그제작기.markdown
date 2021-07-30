@@ -87,7 +87,7 @@ html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=tryc
 ```
 ![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/block-inline.PNG?raw=true){: width="500" height="200"}
 
-`참고자료` [css와 박스모델](https://myetc.tistory.com/18)
+`[참고자료]` [css와 박스모델](https://myetc.tistory.com/18)
 
 ## 4. 태그
 태그는 HTML 문서를 구성하는 구조와 형태를 표현하는 문법적인 요소이다.
@@ -95,6 +95,7 @@ html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=tryc
 - `<p> </p>` : 문단을 바꿈
 - `<br />` : 줄을 바꿈
 - `<span> </span>` : 적용 범위를 바꿈  
+
 ```
 1번 영역<div>2번 영역</div>
 <hr class="my-2">
@@ -112,4 +113,4 @@ html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=tryc
 <a href="#">클릭</a>
 ```
 
-`참고자료` [<a> 태그의 href 속성](http://tcpschool.com/html-tag-attrs/a-href)
+`[참고자료]` [<a> 태그의 href 속성](http://tcpschool.com/html-tag-attrs/a-href)
