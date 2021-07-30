@@ -54,7 +54,7 @@ HTML의 각 엘리먼트들은 박스 형태를 가지고 있다.(=Box model) �
 - text, bg
     - `text-색` : 글자색
     - `bg-색` : 배경색
-    
+
 ```
 <div class="text-white bg-dark">text-white bg-dark</div>
 <div class="m-1 bg-warning">m-1 bg-warning</div>
@@ -65,17 +65,19 @@ HTML의 각 엘리먼트들은 박스 형태를 가지고 있다.(=Box model) �
 <div class="py-3 bg-secondary">py-3 bg-secondary</div>
 <div class="ml-2 my-3 px-5 text-danger bg-warning">ml-2 my-3 px-5 text-danger bg-warning</div>
 ```
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/bootstrap.PNG?raw=true){: width="700" height="500"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/bootstrap.PNG?raw=true){: width="900" height="400"}
 
 html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=trycss_default)에서 바로 실행해볼 수 있다.
 
-`참고자료` [bootstrap - 공백(Spacing) 주는 법](https://velog.io/@leyuri/Bootstrap-%EA%B3%B5%EB%B0%B1Spacing-%EC%A3%BC%EB%8A%94-%EB%B2%95-mt-mb-ml-mr-mx-my-pt-pb-pl-pr-px-py)  [Colors](https://getbootstrap.com/docs/4.0/utilities/colors/)
+`[참고자료]` [bootstrap - 공백(Spacing) 주는 법](https://velog.io/@leyuri/Bootstrap-%EA%B3%B5%EB%B0%B1Spacing-%EC%A3%BC%EB%8A%94-%EB%B2%95-mt-mb-ml-mr-mx-my-pt-pb-pl-pr-px-py)  [Colors](https://getbootstrap.com/docs/4.0/utilities/colors/)
 
 ## 3. 블록레벨요소와 인라인레벨요소
-블록레벨요소는 혼자 한 줄을 차지하는 요소라 왼쪽, 오른쪽에 다른 요소가 올 수 없다. 인라인레벨요소는 줄을 차지 않는 요소라 한 줄에 여러 개의 요소를 표시할 수있다.
+블록레벨요소는 혼자 한 줄을 차지하는 요소라 왼쪽, 오른쪽에 다른 요소가 올 수 없다. 반면, 인라인레벨요소는 줄을 차지 않는 요소라 한 줄에 여러 개의 요소를 표시할 수있다.
 - 블록레벨요소 : <P>,<H1>~<H6>,<ul>,<ol>,<div>,<blockquote>,<form>,<hr>,<table>,<fieldset>,<address>
 - 인라인레벨요소 : <img>,<object>,<br>,<sub>,<sup>,<span>,<input>,<textarea>,<label>,<button>
+
 하지만 블록레벨요소를 인라인레벨요소처럼 바꿀 수 있다. 즉 <H1> 옆에 <span> 을 넣게 할 수 있다. 방법은 아래 코드이다.  
+
 ```
 <H1>블록레벨요소</H1>
 <span class="ml-3">인라인레벨요소</span>
