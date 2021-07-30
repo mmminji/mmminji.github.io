@@ -4,7 +4,7 @@ title:  "VSCode 설정하기"
 date:   2021-02-19 17:39:07
 categories: VisualStudioCode Settings
 ---
-알아두면 편리한 설정
+[Guide] 알아두면 편리한 설정
 
 내가 VSCode에서 실제로 사용하는 몇 가지 기능들을 소개하려고 한다.
 
