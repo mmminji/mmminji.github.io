@@ -21,7 +21,7 @@ HTML은 Hyper Text Markup Language의 약자로 페이지의 제목, 문단, 표
 
 ## 2. Bootstrap의 공백 클래스
 HTML의 각 엘리먼트들은 박스 형태를 가지고 있다.(=Box model) 각각의 Content가 있고 그것을 둘러싼 Border가 존재하는데, Border안에 주는 공백을 Padding, Border밖에 주는 공백을 Margin이라고 부른다.  
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/boxmodel.png?raw=true){: width="700" height="400"}  
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/boxmodel.png?raw=true){: width="500" height="250"}  
 이러한 Padding과 Margin을 주는 방법은 다음과 같다.
 - P, M
     - `P` : Padding
@@ -73,10 +73,10 @@ html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=tryc
 
 ## 3. 블록레벨요소와 인라인레벨요소
 블록레벨요소는 혼자 한 줄을 차지하는 요소라 왼쪽, 오른쪽에 다른 요소가 올 수 없다. 반면, 인라인레벨요소는 줄을 차지 않는 요소라 한 줄에 여러 개의 요소를 표시할 수있다.
-- 블록레벨요소 : <P>,<H1>~<H6>,<ul>,<ol>,<div>,<blockquote>,<form>,<hr>,<table>,<fieldset>,<address>
-- 인라인레벨요소 : "<img>,<object>,<br>,<sub>,<sup>,<span>,<input>,<textarea>,<label>,<button>"
+- 블록레벨요소 : `<P>,<H1>~<H6>,<ul>,<ol>,<div>,<blockquote>,<form>,<hr>,<table>,<fieldset>,<address>`
+- 인라인레벨요소 : `<img>,<object>,<br>,<sub>,<sup>,<span>,<input>,<textarea>,<label>,<button>`
 
-하지만 블록레벨요소를 인라인레벨요소처럼 바꿀 수 있다. 즉 <H1> 옆에 <span> 을 넣게 할 수 있다. 방법은 아래 코드이다.  
+하지만 블록레벨요소를 인라인레벨요소처럼 바꿀 수 있다. 즉, `<H1>` 옆에 `<span>` 을 넣게 할 수 있다. 방법은 아래 코드이다.  
 
 ```
 <H1>블록레벨요소</H1>
@@ -113,4 +113,4 @@ html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=tryc
 <a href="#">클릭</a>
 ```
 
-`[참고자료]` [a 태그의 href 속성](http://tcpschool.com/html-tag-attrs/a-href)
+`[참고자료]` [`<a>` 태그의 href 속성](http://tcpschool.com/html-tag-attrs/a-href)
