@@ -120,7 +120,7 @@ chgrp [옵션] [그룹명] [파일명]
         |o(기타사용자)|x(실행)|=(설정)|
         |a(전체)|||
     - 숫자 모드 : 세자리의 수로 표현하며, 각 자리의 숫자는 4(읽기), 2(쓰기), 1(실행)의 합으로 나타낸다.
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/Linux-chmod?raw=true){: width="800" height="1400"}  
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/Linux-chmod.png?raw=true){: width="800" height="1400"}  
 ```console
 chmod [접근 권한 설정] [파일명]
 ```
