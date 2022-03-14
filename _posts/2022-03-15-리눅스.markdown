@@ -60,6 +60,7 @@ categories: Linux
     |:! [shell]|vi 작업을 잠시 중단하고 shell 명령 실행|:sh|vi를 잠시 빠져나가 다수의 shell 명령 실행|
 
 ## 2. 정규식
+grep 명령어와 정규식을 함께 사용하면 정규식에 표현된 문자열을 문서 내에서 찾을 수 있다.
 | 정규식 | 의미 | 문자열 |
 |:---:|:---:|---|
 |str|글자 그대로|str|
@@ -110,7 +111,7 @@ chgrp [옵션] [그룹명] [파일명]
 ```console
 chmod [접근 권한 설정] [파일명]
 ```
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/Linux-chmod?raw=true){: width="800" height="1400"}
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/Linux-chmod?raw=true){: width="800" height="1400"}  
     - 기호모드 : 사용자,연산자,접근권한 순서로 표현한다.
         |사용자|연산자|접근권한|
         |:---:|:---:|:---:|
@@ -123,18 +124,21 @@ chmod [접근 권한 설정] [파일명]
 
 ## 5. 파일 압축 및 묶기
 
-- xz/bzip2/gzip을 통해 압축하고, `-d`는 푸는 옵션이다.
+- xz/bzip2/gzip : 압축하는 기능이고, `-d`는 푸는 옵션이다.
 ```console
 xz [파일명]
 ```
-- tar를 통해 묶어주고, `c`는 묶기, `x`는 풀기, `t`는 경로확인, `f`는 파일, `v`는 과정 보이기, `J`는 tar+xz, `z`는 tar+gzip, `j`는 tar+bzip2 옴셥을 나타낸다.(vf는 기본으로 쓰고 c/x선택, J/z/j 선택)
+- tar : 묶는 기능이고, `c`는 묶기, `x`는 풀기, `t`는 경로확인, `f`는 파일, `v`는 과정 보이기, `J`는 tar+xz, `z`는 tar+gzip, `j`는 tar+bzip2 옵션을 나타낸다.
+(vf는 기본으로 쓰고 c/x선택, J/z/j 선택)
 ```console
 tar [옵션] [파일명] [경로]
 ```
 
 
 ## 6. 파일 위치 검색
-- find를 통해 옵션에 해당하는 조건을 경로에서 찾고, action을 취해준다. 옵션에는 `-name`, `-user`(소유자), `-perm`(허가권), `-size`(크기)가 있고, action에는 `-print`(출력), `-exec`(명령 실행)이 있다.
+- find를 통해 옵션에 해당하는 조건을 경로에서 찾고, action을 취해준다.
+- 옵션에는 `-name`, `-user`(소유자), `-perm`(허가권), `-size`(크기)가 있다.
+- action에는 `-print`(출력), `-exec`(명령 실행)이 있다.
 ```console
 find [경로] [옵션] [조건] [action]
 ```
