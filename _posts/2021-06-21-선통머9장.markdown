@@ -35,4 +35,4 @@ Stacking(스태킹)이란, 여러 가지 학습기를 쌓는 방법으로 베이
 
 ![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/9-Ensemble.PNG?raw=true){: width="1100" height="700"}
 
-이 내용은 **선형대수와 통계학으로 배우는 머신러닝 with 파이썬 : 최적화 개념부터 텐서플로를 활용한 딥러닝까지** 책을 기반으로 공부한 자료입니다.
+이 내용은 **선형대수와 통계학으로 배우는 머신러닝 with 파이썬 : 최적화 개념부터 텐서플로를 활용한 딥러닝까지** 책을 기반으로 공부한 자료이다.

@@ -17,4 +17,4 @@ Convolution Neural Network(합성곱 신경망, CNN)는 이미지 처리 분야�
 - 채널(channel) : 입력 데이터의 차원수를 의미하며 고차원 데이터에 대한 합성곱에서는 입력 데이터와 커널의 차원 수가 동일
 ![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/12.4-CNN.png?raw=true){: width="800" height="800"}
 
-이 내용은 **선형대수와 통계학으로 배우는 머신러닝 with 파이썬 : 최적화 개념부터 텐서플로를 활용한 딥러닝까지** 책을 기반으로 공부한 자료입니다.
+이 내용은 **선형대수와 통계학으로 배우는 머신러닝 with 파이썬 : 최적화 개념부터 텐서플로를 활용한 딥러닝까지** 책을 기반으로 공부한 자료이다.

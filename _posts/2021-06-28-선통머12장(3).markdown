@@ -23,4 +23,4 @@ LSTM의 계산을 좀 더 간소화시켜 셀 상태 없이 은닉 상태만 사
 ![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/12.5-RNN.png?raw=true){: width="800" height="1400"}
 
 
-이 내용은 **선형대수와 통계학으로 배우는 머신러닝 with 파이썬 : 최적화 개념부터 텐서플로를 활용한 딥러닝까지** 책을 기반으로 공부한 자료입니다.
+이 내용은 **선형대수와 통계학으로 배우는 머신러닝 with 파이썬 : 최적화 개념부터 텐서플로를 활용한 딥러닝까지** 책을 기반으로 공부한 자료이다.
