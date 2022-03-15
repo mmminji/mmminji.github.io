@@ -116,8 +116,9 @@ chown [옵션] [사용자 계정] [파일명]
 chgrp [옵션] [그룹명] [파일명]
 ```
 - chmod : 파일 및 디렉토리의 소유와 허가권을 변경한다.
-    - 접근 권한 표기
+    - 접근 권한 표기  
 ![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/Linux-chmod.png?raw=true){: width="800" height="130"}  
+
     - 기호모드 : 사용자,연산자,접근권한 순서로 표현한다.  
     
         |사용자|연산자|접근권한|
