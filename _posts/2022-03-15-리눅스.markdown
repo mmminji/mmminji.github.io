@@ -118,11 +118,6 @@ chgrp [옵션] [그룹명] [파일명]
 - chmod : 파일 및 디렉토리의 소유와 허가권을 변경한다.
     - 접근 권한 표기
 ![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/Linux-chmod.png?raw=true){: width="800" height="130"}  
-
-```console
-chmod [접근 권한 설정] [파일명]
-```
-
     - 기호모드 : 사용자,연산자,접근권한 순서로 표현한다.  
     
         |사용자|연산자|접근권한|
@@ -133,6 +128,9 @@ chmod [접근 권한 설정] [파일명]
         |a(전체)|||
         
     - 숫자 모드 : 세자리의 수로 표현하며, 각 자리의 숫자는 4(읽기), 2(쓰기), 1(실행)의 합으로 나타낸다.
+```console
+chmod [접근 권한 설정] [파일명]
+```
 
 
 
