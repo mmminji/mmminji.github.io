@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "리눅스"
-date:   2022-03-15 
+date:   2021-03-15 
 categories: Linux
 ---
 [Lecture Review] 한줄정리
