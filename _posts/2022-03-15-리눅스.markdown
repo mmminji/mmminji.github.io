@@ -148,7 +148,7 @@ tar [옵션] [파일명] [경로]
 
 
 ## 6. 파일 위치 검색
-- find : 조건에 해당하는 옵션을 경로에서 찾고, action을 취해준다. 옵션에는 `-name`, `-user`(소유자), `-perm`(허가권), `-size`(크기)이 있고, action에는 `-print`(출력), `-exec`(명령 실행)이 있다.
+- find : 조건에 해당하는 옵션을 경로에서 찾고, action을 취해준다. 옵션에는 `-name`, `-user`(소유자), `-newer`(전,후), `-perm`(허가권), `-size`(크기)이 있고, action에는 `-print`(출력), `-exec`(명령 실행)이 있다.
 ```console
 find [경로] [옵션] [조건] [action]
 ```
