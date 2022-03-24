@@ -33,7 +33,7 @@ HTML의 각 엘리먼트들은 박스 형태를 가지고 있다.(=Box model) �
 |||**x**|좌 + 우|**warning**|노란색|**4**|1.5rem(글자 크기 16px일 때, 24px)|
 |||**y**|위 + 아래|**light**|흰색|**5**|3rem(글자 크기 16px일 때, 48px)|
 |||**공백**|위 + 아래 + 좌 + 우|**white**|흰색|**auto**|margin의 자동으로 세팅|
-||||**dark**|검정색||||
+|||||**dark**|검정색|||
 
 ```
 <div class="text-white bg-dark">text-white bg-dark</div>
