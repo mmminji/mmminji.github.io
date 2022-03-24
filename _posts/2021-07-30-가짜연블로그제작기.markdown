@@ -17,7 +17,6 @@ categories: 가짜연구소블로그 HTML CSS
 HTML은 Hyper Text Markup Language의 약자로 페이지의 제목, 문단, 표, 이미지 등을 정의하고 그 구조와 의미를 부여하는 정적 언어이다. 즉, 웹의 구조를 담당하는 언어이다.
 반면, CSS는 Cascading Style Sheets의 약자로 HTML 문서의 스타일(색상, 크기, 폰트, 레이아웃 등)을 지정하여 콘텐츠 구조를 꾸며주는 정적 언어이다. 즉, 웹의 시각적인 표현을 담당하는 언어이다.
 
-`[참고자료]` [입문자에게 추천하는 HTML, CSS 첫걸음](https://heropy.blog/2019/04/24/html-css-starter/) / [CSS란?(HTML과 CSS의 차이, CSS 작성법)](https://aboooks.tistory.com/49)
 
 
 ## 2. Bootstrap의 공백 클래스
@@ -70,7 +69,6 @@ HTML의 각 엘리먼트들은 박스 형태를 가지고 있다.(=Box model) �
 
 html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=trycss_default)에서 바로 실행해볼 수 있다.
 
-`[참고자료]` [bootstrap - 공백(Spacing) 주는 법](https://velog.io/@leyuri/Bootstrap-%EA%B3%B5%EB%B0%B1Spacing-%EC%A3%BC%EB%8A%94-%EB%B2%95-mt-mb-ml-mr-mx-my-pt-pb-pl-pr-px-py) / [Colors](https://getbootstrap.com/docs/4.0/utilities/colors/)
 
 
 ## 3. 블록레벨요소와 인라인레벨요소
@@ -89,7 +87,6 @@ html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=tryc
 ```
 ![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/block-inline.PNG?raw=true){: width="400" height="150"}
 
-`[참고자료]` [css와 박스모델](https://myetc.tistory.com/18)
 
 
 ## 4. 태그
@@ -116,4 +113,12 @@ html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=tryc
 <a href="#">클릭</a>
 ```
 
-`[참고자료]` [HTML 차이점 비교](https://ojji.wayful.com/2013/12/HTML-Line-break-tag-and-Paragraph-tag.html) / [`<a>` 태그의 href 속성](http://tcpschool.com/html-tag-attrs/a-href)
+
+## 참고자료
+- [입문자에게 추천하는 HTML, CSS 첫걸음](https://heropy.blog/2019/04/24/html-css-starter/)
+- [CSS란?(HTML과 CSS의 차이, CSS 작성법)](https://aboooks.tistory.com/49)
+- [bootstrap - 공백(Spacing) 주는 법](https://velog.io/@leyuri/Bootstrap-%EA%B3%B5%EB%B0%B1Spacing-%EC%A3%BC%EB%8A%94-%EB%B2%95-mt-mb-ml-mr-mx-my-pt-pb-pl-pr-px-py)
+- [Colors](https://getbootstrap.com/docs/4.0/utilities/colors/)
+- [css와 박스모델](https://myetc.tistory.com/18)
+- [HTML 차이점 비교](https://ojji.wayful.com/2013/12/HTML-Line-break-tag-and-Paragraph-tag.html)
+- [`<a>` 태그의 href 속성](http://tcpschool.com/html-tag-attrs/a-href)

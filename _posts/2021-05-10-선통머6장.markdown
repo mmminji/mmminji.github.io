@@ -15,13 +15,13 @@ categories: MachineLearning Preprocessing MissingValue LabelEncoder Scaling
     - 결측치를 포함한 데이터 삭제
     - 결측치를 특정값(최빈값, 평균값)으로 대체
 
-### 6.2.2 클래스 라벨 설정 [>코드<](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/6.2.2.LabelEncoder.py)
+### 6.2.2 클래스 라벨 설정 [\[코드\]](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/6.2.2.LabelEncoder.py)
 LabelEncoder란, 문자열 클래스를 정수로 바꿔서 이름표를 붙이는 것을 의미한다.
 
-### 6.2.3 원-핫 인코딩 [>코드<](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/6.2.3.OneHotEncoding.py)
+### 6.2.3 원-핫 인코딩 [\[코드\]](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/6.2.3.OneHotEncoding.py)
 One-got encoding이란, 클래스 라벨링의 또 다른 방법으로 0과 1만 사용하여 데이터를 표현하는 방법이다.
 
-### 6.2.4 데이터 스케일링 [>코드<](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/6.2.4.Scaling.py)
+### 6.2.4 데이터 스케일링 [\[코드\]](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/6.2.4.Scaling.py)
 Data Scaling이란, 변수들이 각각 다른 단위를 가지기 때문에 단위에 영향을 받지 않도록 변형하는 것을 말한다.  
 단, train 데이터만으로 스케일링 기준을 정하고 train, test 데이터에 적용하여 변환시킨다.
 - Standarad Scaling (표준화 스케일링) : 평균이 0, 표준편차가 1이 되도록 평균을 빼고 표준편차로 나눠주는 방법

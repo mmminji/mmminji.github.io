@@ -8,7 +8,7 @@ categories: CNN kernel padding stride pooling channel
 
 # 12 딥러닝
 
-## 12.4 합성곱 신경망 [>TensorFlow코드<](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/12.4.TensorFlowCNN.py)  [>PyTorch코드<](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/12.4.PyTorchCNN.py)
+## 12.4 합성곱 신경망 [\[TensorFlow코드\]](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/12.4.TensorFlowCNN.py)  [\[PyTorch코드\]](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/12.4.PyTorchCNN.py)
 Convolution Neural Network(합성곱 신경망, CNN)는 이미지 처리 분야에서 주로 사용되는 방법으로 합성곱이라는 연산을 사용하는 신경망이다.
 - 커널(kernel) : 입력 데이터와 합성곱 연산을 수행하게 되는 행렬, 즉 가중치 --> 커널 개수에 따라 출력 데이터의 차원 결정
 - 패딩(padding) : 합성곱 후에 출력 데이터의 차원이 줄어드는 현상을 방지하기 위해 입력 데이터 주변을 특정 값으로 채우는 것
