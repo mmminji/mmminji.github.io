@@ -8,7 +8,7 @@ categories: RNN LSTM GRU
 
 # 12 딥러닝
 
-## 12.5 순환 신경망 [>TensorFlow코드<](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/12.5.TensorFlowLSTM.py)  [>PyTorch코드<](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/12.5.PyTorchGRU.py)
+## 12.5 순환 신경망 [\[TensorFlow코드\]](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/12.5.TensorFlowLSTM.py)  [\[PyTorch코드\]](https://github.com/mmminji/ML-DL-STUDY/blob/master/선형대수와%20통계학으로%20배우는%20머신러닝%20with%20파이썬/12.5.PyTorchGRU.py)
 Recurrent Neural Network(순환 신경망, RNN)는 시퀀스 데이터를 처리하는 방법으로 은닉층의 출력값이 다음 시점에 사용되는 신경망 구조를 갖고 있다.  
 이로 인해 그래디언트 소실 문제나 폭주 문제가 발생하는데 이를 해결하기 위해 Long Short Term Memory(LSTM)이 등장한다.
 - 입력 게이트(i, g) : 셀 상태를 업데이트
