@@ -22,38 +22,42 @@ HTML은 Hyper Text Markup Language의 약자로 페이지의 제목, 문단, 표
 ## 2. Bootstrap의 공백 클래스
 HTML의 각 엘리먼트들은 박스 형태를 가지고 있다.(=Box model) 각각의 Content가 있고 그것을 둘러싼 Border가 존재하는데, Border안에 주는 공백을 Padding, Border밖에 주는 공백을 Margin이라고 부른다.  
 ![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/boxmodel.png?raw=true){: width="600" height="300"}  
-이러한 Padding과 Margin을 주는 방법은 다음과 같다.
-- P, M
-    - `P` : Padding
-    - `M` : Margin
-- t, b, l, r, x, y
-    - `t` : 위
-    - `b` : 아래
-    - `l` : 좌
-    - `r` : 우
-    - `x` : 좌 + 우
-    - `y` : 위 + 아래
-    - `공백` : 위 + 아래 + 좌 + 우
-- 0, 1, 2, 3, 4, 5, auto
-    - `0` : 0
-    - `1` : 0.25rem(글자 크기 16px일 때, 4px)
-    - `2` : 0.5rem(글자 크기 16px일 때, 8px)
-    - `3` : 1rem(글자 크기 16px일 때, 16px)
-    - `4` : 1.5rem(글자 크기 16px일 때, 24px)
-    - `5` : 3rem(글자 크기 16px일 때, 48px)
-    - `auto` : margin의 자동으로 세팅
-- color
-    - `primary` : 파란색
-    - `secondary` : 회색
-    - `success` : 초록색
-    - `danger` : 빨간색
-    - `warning` : 노란색
-    - `light` : 흰색
-    - `white` : 흰색
-    - `dark` : 검정색
-- text, bg
-    - `text-색` : 글자색
-    - `bg-색` : 배경색
+이러한 Padding과 Margin을 주는 방법은 다음과 같다. (html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=trycss_default)에서 바로 실행해볼 수 있다.)
+
+| 구분 | 의미 |
+|:---:|---|
+|P|Padding|
+|M|Margin|
+|text-색|글자색|
+|bg-색|배경색|
+| 방향 | 의미 |
+|:---:|---|
+|t|위|
+|b|아래|
+|l|좌|
+|r|우|
+|x|좌 + 우|
+|y|위 + 아래|
+|공백|위 + 아래 + 좌 + 우|
+| 수치 | 의미 |
+|:---:|---|
+|0|0|
+|1|0.25rem(글자 크기 16px일 때, 4px)|
+|2|0.5rem(글자 크기 16px일 때, 8px)|
+|3|1rem(글자 크기 16px일 때, 16px)|
+|4|1.5rem(글자 크기 16px일 때, 24px)|
+|5|3rem(글자 크기 16px일 때, 48px)|
+|auto|margin의 자동으로 세팅|
+| 색 | 의미 |
+|:---:|---|
+|primary|파란색|
+|secondary|회색|
+|success|초록색|
+|danger|빨간색|
+|warning|노란색|
+|light|흰색|
+|white|흰색|
+|dark|검정색|
 
 ```
 <div class="text-white bg-dark">text-white bg-dark</div>
@@ -66,8 +70,6 @@ HTML의 각 엘리먼트들은 박스 형태를 가지고 있다.(=Box model) �
 <div class="ml-2 my-3 px-5 text-danger bg-warning">ml-2 my-3 px-5 text-danger bg-warning</div>
 ```
 ![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/bootstrap.PNG?raw=true){: width="800" height="400"}
-
-html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=trycss_default)에서 바로 실행해볼 수 있다.
 
 
 
@@ -104,14 +106,15 @@ html 코드는 [W3Schools](https://www.w3schools.com/css/tryit.asp?filename=tryc
 1번 문장<br />2번 문장
 
 1번 범위<span>2번 범위</span>
-```
 ![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/tag.PNG?raw=true){: width="500" height="250"}
+```
 
 추가로 `<a>`태그는 하이퍼링크를 걸어주는 태그이다. 직접 절대주소를 명시할 수도 있고, #은 페이지 최상단으로 이동할 수도 있다.  
 ```
 <a href="https://www.linkedin.com/in/mmminji/">강민지 링크드인 프로필</a>
 <a href="#">클릭</a>
 ```
+
 
 
 ## 참고자료
