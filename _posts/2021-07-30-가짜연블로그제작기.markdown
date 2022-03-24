@@ -30,6 +30,7 @@ HTML의 각 엘리먼트들은 박스 형태를 가지고 있다.(=Box model) �
 |M|Margin|
 |text-색|글자색|
 |bg-색|배경색|
+
 | 방향 | 의미 |
 |:---:|---|
 |t|위|
@@ -39,6 +40,7 @@ HTML의 각 엘리먼트들은 박스 형태를 가지고 있다.(=Box model) �
 |x|좌 + 우|
 |y|위 + 아래|
 |공백|위 + 아래 + 좌 + 우|
+
 | 수치 | 의미 |
 |:---:|---|
 |0|0|
@@ -48,6 +50,7 @@ HTML의 각 엘리먼트들은 박스 형태를 가지고 있다.(=Box model) �
 |4|1.5rem(글자 크기 16px일 때, 24px)|
 |5|3rem(글자 크기 16px일 때, 48px)|
 |auto|margin의 자동으로 세팅|
+
 | 색 | 의미 |
 |:---:|---|
 |primary|파란색|
@@ -106,8 +109,8 @@ HTML의 각 엘리먼트들은 박스 형태를 가지고 있다.(=Box model) �
 1번 문장<br />2번 문장
 
 1번 범위<span>2번 범위</span>
-![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/tag.PNG?raw=true){: width="500" height="250"}
 ```
+![](https://github.com/mmminji/mmminji.github.io/blob/main/assets/post_pics/tag.PNG?raw=true){: width="500" height="250"}
 
 추가로 `<a>`태그는 하이퍼링크를 걸어주는 태그이다. 직접 절대주소를 명시할 수도 있고, #은 페이지 최상단으로 이동할 수도 있다.  
 ```
