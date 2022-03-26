@@ -1,0 +1,144 @@
+---
+layout: post
+title:  "PyTorch 기본"
+date:   2022-03-27 
+categories: PyTorch DeepLearning 
+---
+[Lecture Review] 한줄정리
+
+## 1. Introduction to PyTorch
+
+### PyTorch compared to Numpy
+|| Pytorch | Numpy |
+|:---:|---|---|
+|모듈|import torch|import numpy as np|
+|기본|torch.tensor([[2,3,5],[1,2,9]])|np.array([[2,3,5],[1,2,9]])|
+|난수|torch.rand(2,2)|np.random.rand(2,2)|
+|크기|a.shape|a.shape|
+|행렬곱|torch.matmul(a,b)|np.dot(a,b)|
+|원소곱|a*b|np.multiply(a,b)|
+|0행렬|torch.zeros(2,2)|np.zeros((2,2))|
+|1행렬|torch.ones(2,2)|np.ones((2,2))|
+|단위행렬|torch.eye(2)|np.identity(2)|
+|변환|torch.from_numpy(a)|a.numpy()|
+
+### Backpropagation
+```python
+import torch
+
+x = torch.tensor(-3., requires_grad=True)
+y = torch.tensor(5., requires_grad=True)
+z = torch.tensor(-2., requires_grad=True)
+
+q = x + y
+f = q * z
+
+f.backward()
+
+z.grad  # tensor(2.)
+y.grad  # tensor(-2.)
+x.grad  # tensor(-2.)
+```
+
+
+## 2. Artificial Neural Networks
+
+### Activation Functions
+행렬곱(신경망)을 여러개 쌓아도 하나의 행렬곱으로 단순화시킬 수 있기 때문에 활성화 함수를 사용하여 비선형적인 관계를 처리하고 복잡한 모델을 구축한다. 즉, 활성화 함수는 신경망의 각 계층에 삽입하는 비선형 함수이다. 다양한 활성함 함수는 [이 페이지](https://mmminji.github.io/ann/perceptron/backpropagation/activationfunction/batchnormalization/dropout/2021/06/22/%EC%84%A0%ED%86%B5%EB%A8%B812%EC%9E%A5.html)에서 확인할 수 있다.
+```python
+import torch.nn as nn
+relu = nn.ReLU()
+
+tensor = torch.tensor([2., -4.])
+relu(tensor)  # tensor([2., 0.])
+```
+
+### Loss Functions
+손실함수는 모델이 얼마나 잘못 수행하고 있는지에 대한 척도이다. 대표적으로 회귀에서는 최소 제곱 오차를 계산하고, 분류에서는 softmax cross-entropy를 계산한다. 일반적으로 네트워크가 정확할수록 손실값은 더 작다.
+```python
+logits = torch.tensor([[3.2, 5.1, -1.7]])
+ground_truth = torch.tensor([0])
+criterion = nn.CrossEntropyLoss()
+
+loss = criterion(logits, ground_truth)  # tensor(2.0404)
+```
+softmax cross-entropy는 각 클래스별 logit을 자연상수(e)에 제곱하고 normalize하여 확률값을 계산한 후, 정답 클래스의 확률값에 음의 자연로그를 취한 값이다.
+```python
+import math
+-math.log(math.exp(3.2) / (math.exp(3.2)+math.exp(5.1)+math.exp(-1.7)))  # 2.0404
+```
+
+### Datasetes and Dataloaders
+```python
+import torch
+import torchvision
+import torch.utils.data
+import torchvision.transforms as transforms
+transform = transforms.Compose( [transforms.ToTensor().
+                                   transforms.Normalize((0.4914, 0.48216, 0.44653),
+                                                          (0.24703, 0.24349, 0.26159))])
+trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)
+testset = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)
+trainloader = torch.utils.data.DataLoader(trainset, batch_size=32, shuffle=True, num_workers=4)
+testloader = torch.utils.data.DataLoader(testset, batch_size=32, shuffle=False, num_workers=4)
+print(testloader.dataset.test_data.shape)  # (10000, 32, 32, 3)
+print(testloader.batch_size)  # 32
+```
+
+### Build a neural network
+```python
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.optim as optim
+
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        self.fc1 = nn.Linear(32*32*3, 500)
+        self.fc2 = nn.Linear(500, 10)
+
+    def forward(self, x):
+        x = F.relu(self,fc1(x))
+        return self.fc2(x)
+```
+
+### Train neural networks
+```python
+net = Net()
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(net.parameters(), lr=3e-4)
+
+for epoch in range(10):
+    for i, data in enumerate(trainloader, 0):
+        inputs, labels = data
+        inputs= inputs.view(-1, 32*3*3)
+
+        optimizer.zero_grad()  # gradients를 축적하지 않기 위해
+
+        outputs = net(inputs)
+        loss = creterion(outputs, labels)
+        loss.backward()
+        optimizer.step()
+```
+
+### Get predictions
+```python
+correct, total = 0, 0
+predictions = []
+net.eval()
+for i, data in enumerate(testloader, 0):
+    inputs, labels = data
+    inputs = inputs.view(-1, 32*32*3)
+    outputs = net(inputs)
+    _, predicted = torch.max(outputs.data, 1)
+    predictions.append(outputs)
+    total += labels.size(0)
+    correct += (predicted == labels).sum().item()
+
+accuracy = 100*correct/total
+```
+
+
+
+이 내용은 **DataCamp의 Introduction to Deep Learning with PyTorch** 강의를 기반으로 공부한 자료이다.
