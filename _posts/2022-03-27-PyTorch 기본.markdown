@@ -8,7 +8,8 @@ categories: PyTorch DeepLearning ANN CNN
 
 ## 1. Introduction to PyTorch
 
-### - PyTorch compared to Numpy
+### - PyTorch compared to Numpy  
+
 || Pytorch | Numpy |
 |:---:|---|---|
 |모듈|import torch|import numpy as np|
