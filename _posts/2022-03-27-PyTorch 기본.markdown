@@ -170,7 +170,7 @@ out_feat_F = F.conv2d(image, filters, stride=1, padding=0)
 ```
 
 Convolution 연산 후의 이미지 사이즈는 다음과 같이 계산한다.  
-<img src="https://latex.codecogs.com/svg.image?\inline&space;\LARGE&space;output&space;=&space;\frac{input&plus;2*padding-filter}{stride}" title="https://latex.codecogs.com/svg.image?\inline \LARGE output = \frac{input+2*padding-filter}{stride}" />
+<p align="center"><img src="https://latex.codecogs.com/svg.image?output&space;=&space;\frac{input&plus;2*padding-filter}{stride}" title="https://latex.codecogs.com/svg.image?output = \frac{input+2*padding-filter}{stride}" /></p>
 
 
 ### - Pooling operator
