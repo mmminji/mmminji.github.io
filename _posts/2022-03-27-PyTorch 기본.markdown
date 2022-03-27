@@ -8,7 +8,7 @@ categories: PyTorch DeepLearning
 
 ## 1. Introduction to PyTorch
 
-### PyTorch compared to Numpy
+### - PyTorch compared to Numpy
 || Pytorch | Numpy |
 |:---:|---|---|
 |모듈|import torch|import numpy as np|
@@ -22,7 +22,7 @@ categories: PyTorch DeepLearning
 |단위행렬|torch.eye(2)|np.identity(2)|
 |변환|torch.from_numpy(a)|a.numpy()|
 
-### Backpropagation
+### - Backpropagation
 ```python
 import torch
 
@@ -43,7 +43,7 @@ x.grad  # tensor(-2.)
 
 ## 2. Artificial Neural Networks
 
-### Activation Functions
+### - Activation Functions
 행렬곱(신경망)을 여러개 쌓아도 하나의 행렬곱으로 단순화시킬 수 있기 때문에 활성화 함수를 사용하여 비선형적인 관계를 처리하고 복잡한 모델을 구축한다. 즉, 활성화 함수는 신경망의 각 계층에 삽입하는 비선형 함수이다. 다양한 활성함 함수는 [이 페이지](https://mmminji.github.io/ann/perceptron/backpropagation/activationfunction/batchnormalization/dropout/2021/06/22/%EC%84%A0%ED%86%B5%EB%A8%B812%EC%9E%A5.html)에서 확인할 수 있다.
 ```python
 import torch.nn as nn
@@ -53,7 +53,7 @@ tensor = torch.tensor([2., -4.])
 relu(tensor)  # tensor([2., 0.])
 ```
 
-### Loss Functions
+### - Loss Functions
 손실함수는 모델이 얼마나 잘못 수행하고 있는지에 대한 척도이다. 대표적으로 회귀에서는 최소 제곱 오차를 계산하고, 분류에서는 softmax cross-entropy를 계산한다. 일반적으로 네트워크가 정확할수록 손실값은 더 작다.
 ```python
 logits = torch.tensor([[3.2, 5.1, -1.7]])
@@ -68,7 +68,7 @@ import math
 -math.log(math.exp(3.2) / (math.exp(3.2)+math.exp(5.1)+math.exp(-1.7)))  # 2.0404
 ```
 
-### Datasetes and Dataloaders
+### - Datasetes and Dataloaders
 ```python
 import torch
 import torchvision
@@ -85,7 +85,7 @@ print(testloader.dataset.test_data.shape)  # (10000, 32, 32, 3)
 print(testloader.batch_size)  # 32
 ```
 
-### Build a neural network
+### - Build a neural network
 ```python
 import torch
 import torch.nn as nn
@@ -103,7 +103,7 @@ class Net(nn.Module):
         return self.fc2(x)
 ```
 
-### Train neural networks
+### - Train neural networks
 ```python
 net = Net()
 criterion = nn.CrossEntropyLoss()
@@ -122,7 +122,7 @@ for epoch in range(10):
         optimizer.step()
 ```
 
-### Get predictions
+### - Get predictions
 ```python
 correct, total = 0, 0
 predictions = []
@@ -141,11 +141,11 @@ accuracy = 100*correct/total
 
 ## 3. Convolutional Neural Networks (CNNs)
 
-### Convolution operator
+### - Convolution operator
 fully-connected 신경망은 모든 features 사이의 관계를 고려하기 때문에 연산이 너무 커져 비효율적이고 파라미터가 많아 과적합될 수도 있다. 이를 해결하기 위한 Convolution은 일부의 features만 연결하고 가중치를 공유하도록 한다.  
 Convolution filter는 입력과 depth의 차원이 일치해야 하며, 이미지와 필터 사이의 원소곱으로 계산된다. 관련 용어들은 [이 페이지](https://mmminji.github.io/cnn/kernel/padding/stride/pooling/channel/2021/06/24/%EC%84%A0%ED%86%B5%EB%A8%B812%EC%9E%A5(2).html)에서 확인할 수 있다.  
 PyTorch의 두 가지 모듈이 Convolution 연산을 제공하고 있다.  
-- torch.nn : Conv2d 연산 내에서 필터를 설정
+- torch.nn : Conv2d 연산 내에서 필터를 설정  
 ```python
 import torch
 import torch.nn
@@ -154,7 +154,7 @@ image = torch.rand(16, 3, 32, 32)
 conv_filter = torch.nn.Conv2d(in_channels=3, out_channels=1, kernel_size=5, stride=1, padding=0)
 output_feature = conv_filter(image)
 ```
-- torch.nn.functional : 필터를 따로 선언하고 conv2d 연산 수행
+- torch.nn.functional : 필터를 따로 선언하고 conv2d 연산 수행  
 ```python
 import torch
 import torch.nn.functional as F
@@ -163,20 +163,20 @@ image = torch.rand(16, 3, 32, 32)
 filters = torch.rand(1, 3, 5, 5)
 out_feat_F = F.conv2d(image, filters, stride=1, padding=0)
 ```
-Convolution 연산 후의 이미지 사이즈는 다음과 같이 계산한다.
+Convolution 연산 후의 이미지 사이즈는 다음과 같이 계산한다.  
 <img src="https://latex.codecogs.com/svg.image?\inline&space;\LARGE&space;output&space;=&space;\frac{input&plus;2*padding-filter}{stride}" title="https://latex.codecogs.com/svg.image?\inline \LARGE output = \frac{input+2*padding-filter}{stride}" />
 
 
-### Pooling operator
+### - Pooling operator
 Pooling은 단순히 크기를 줄이는 것으로 연산을 더 효율적이게 하고 이미지의 이동에 대해 모델을 더 robust하게 한다. 대표적으로 Max-Pooling과 Average-Pooling이 있다.
-- Max-Pooling
+- Max-Pooling  
 ```python
 max_pooling = torch.nn.MaxPool2d(2)
 output_feature = max_pooling(image)
 
 out_feat_F = F.max_pool2d(image, 2)
 ```
-- Average-Pooling
+- Average-Pooling  
 ```python
 avg_pooling = torch.nn.AvgPool2d(2)
 output_feature = avg_pooling(image)
@@ -184,7 +184,7 @@ output_feature = avg_pooling(image)
 out_feat_F = F.avg_pool2d(image, 2)
 ```
 
-### Build a Convolutional Neural Network
+### - Build a Convolutional Neural Network
 ```python
 class Net(nn.Module):
     def __init__(self, num_classes):
