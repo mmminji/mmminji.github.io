@@ -2,7 +2,7 @@
 layout: post
 title:  "리눅스"
 date:   2022-03-15 
-categories: Linux
+categories: Linux vi에디터 정규식 기본명령어 권한관리 압축 검색
 ---
 [Lecture Review] 한줄정리
 
