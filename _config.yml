@@ -1,4 +1,4 @@
-title: 홍익인간 Data Scientist
+title: 홍익인간; 널리 세상을 이롭게 하다
 author: GitHub User
 email: your-email@domain.com
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -14,7 +14,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Minji Kang
-  tagline: 홍익인간; 널리 세상을 이롭게 하다
+  tagline: Data Scientist
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
