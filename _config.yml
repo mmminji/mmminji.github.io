@@ -1,4 +1,4 @@
-title: 밍로그
+title: 홍익인간 Data Scientist
 author: GitHub User
 email: your-email@domain.com
 description: > # this means to ignore newlines until "show_exerpts:"
@@ -14,7 +14,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Minji Kang
-  tagline: Data Scientist
+  tagline: 홍익인간 \n Data Scientist
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
